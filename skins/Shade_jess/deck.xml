@@ -513,7 +513,7 @@
 							</State>
 							<Pos>667,7</Pos>
 							<Connection>
-								<ConfigKey>[Channel<Variable name="channum"/>],beatsync</ConfigKey>
+								<ConfigKey>[Channel<Variable name="channum"/>],sync_enabled</ConfigKey>
 								<ButtonState>LeftButton</ButtonState>
 							</Connection>
 							<Connection>

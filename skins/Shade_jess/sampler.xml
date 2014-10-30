@@ -131,7 +131,7 @@
 									<Style></Style>
 									<NumberStates>64</NumberStates>
 									<Path>knobs/knob_rotary_s%1.png</Path>
-									<Pos>184,66</Pos>
+									<Pos>192,70</Pos>
 									<Connection>
 										<ConfigKey>[Sampler<Variable name="samplernum"/>],pregain</ConfigKey>
 									</Connection>
@@ -240,7 +240,7 @@
 										<Pressed>btn_sync_sampler_overdown.png</Pressed>
 										<Unpressed>btn_sync_sampler.png</Unpressed>
 									</State>
-									<Pos>11,68</Pos>
+									<Pos>5,75</Pos>
 									<Connection>
 										<ConfigKey>[Sampler<Variable name="samplernum"/>],beatsync</ConfigKey>
 										<EmitOnPressAndRelease>true</EmitOnPressAndRelease>
@@ -250,6 +250,34 @@
 										<ConfigKey>[Sampler<Variable name="samplernum"/>],beatsync_tempo</ConfigKey>
 										<EmitOnPressAndRelease>true</EmitOnPressAndRelease>
 										<ButtonState>RightButton</ButtonState>
+									</Connection>
+								</PushButton>
+
+								<!--
+								**********************************************
+								Button - FX1
+								**********************************************
+								-->
+
+								<PushButton>
+									<TooltipId></TooltipId>
+									<Style></Style>
+									<NumberStates>2</NumberStates>
+									<State>
+										<Number>0</Number>
+										<Pressed>btn_kill_down.png</Pressed>
+										<Unpressed>btn_kill.png</Unpressed>
+									</State>
+									<State>
+										<Number>1</Number>
+										<Pressed>btn_kill_overdown.png</Pressed>
+										<Unpressed>btn_kill_over.png</Unpressed>
+									</State>
+									<Pos>47,60</Pos>
+									<Connection>
+										<ConfigKey>[EffectRack1_EffectUnit1],group_[Sampler<Variable name="samplernum"/>]_enable</ConfigKey>
+										<EmitOnPressAndRelease>true</EmitOnPressAndRelease>
+										<ButtonState>LeftButton</ButtonState>
 									</Connection>
 								</PushButton>
 	
@@ -274,7 +302,7 @@
 										<Pressed>btn_hotcue1_1_overdown.png</Pressed>
 										<Unpressed>btn_hotcue1_1_over.png</Unpressed>
 									</State>
-									<Pos>58,68</Pos>
+									<Pos>62,75</Pos>
 									<Connection>
 										<ConfigKey>[Sampler<Variable name="samplernum"/>],hotcue_1_activate</ConfigKey>
 										<EmitOnPressAndRelease>true</EmitOnPressAndRelease>
@@ -308,7 +336,7 @@
 										<Pressed>btn_hotcue1_2_overdown.png</Pressed>
 										<Unpressed>btn_hotcue1_2_over.png</Unpressed>
 									</State>
-									<Pos>79,68</Pos>
+									<Pos>83,75</Pos>
 									<Connection>
 										<ConfigKey>[Sampler<Variable name="samplernum"/>],hotcue_2_activate</ConfigKey>
 										<EmitOnPressAndRelease>true</EmitOnPressAndRelease>
@@ -342,7 +370,7 @@
 										<Pressed>btn_hotcue1_3_overdown.png</Pressed>
 										<Unpressed>btn_hotcue1_3_over.png</Unpressed>
 									</State>
-									<Pos>100,68</Pos>
+									<Pos>104,75</Pos>
 									<Connection>
 										<ConfigKey>[Sampler<Variable name="samplernum"/>],hotcue_3_activate</ConfigKey>
 										<EmitOnPressAndRelease>true</EmitOnPressAndRelease>
@@ -376,7 +404,7 @@
 										<Pressed>btn_hotcue1_4_overdown.png</Pressed>
 										<Unpressed>btn_hotcue1_4_over.png</Unpressed>
 									</State>
-									<Pos>121,68</Pos>
+									<Pos>125,75</Pos>
 									<Connection>
 										<ConfigKey>[Sampler<Variable name="samplernum"/>],hotcue_4_activate</ConfigKey>
 										<EmitOnPressAndRelease>true</EmitOnPressAndRelease>
@@ -414,9 +442,37 @@
 										<Pressed>btn_pfl_sampler_overdown.png</Pressed>
 										<Unpressed>btn_pfl_sampler_over.png</Unpressed>
 									</State>
-									<Pos>147,68</Pos>
+									<Pos>146,75</Pos>
 									<Connection>
 										<ConfigKey>[Sampler<Variable name="samplernum"/>],pfl</ConfigKey>
+									</Connection>
+								</PushButton>
+
+								<!--
+								**********************************************
+								Button - FX2
+								**********************************************
+								-->
+
+								<PushButton>
+									<TooltipId></TooltipId>
+									<Style></Style>
+									<NumberStates>2</NumberStates>
+									<State>
+										<Number>0</Number>
+										<Pressed>btn_kill_down.png</Pressed>
+										<Unpressed>btn_kill.png</Unpressed>
+									</State>
+									<State>
+										<Number>1</Number>
+										<Pressed>btn_kill_overdown.png</Pressed>
+										<Unpressed>btn_kill_over.png</Unpressed>
+									</State>
+									<Pos>177,60</Pos>
+									<Connection>
+										<ConfigKey>[EffectRack1_EffectUnit2],group_[Sampler<Variable name="samplernum"/>]_enable</ConfigKey>
+										<EmitOnPressAndRelease>true</EmitOnPressAndRelease>
+										<ButtonState>LeftButton</ButtonState>
 									</Connection>
 								</PushButton>
 	
