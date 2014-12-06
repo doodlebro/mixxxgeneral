@@ -1,8 +1,8 @@
 <Template>
 	<WidgetGroup>
 		<Pos>0,0</Pos>
-		<MinimumSize>508,200</MinimumSize>
-	    <MaximumSize>508,200</MaximumSize>
+		<MinimumSize>508,160</MinimumSize>
+	    <MaximumSize>508,160</MaximumSize>
 		<Layout>vertical</Layout>
 		<Style>QGroupBox { 
 					border: 0px solid green;  
@@ -13,7 +13,7 @@
 		<Children>
 			<WidgetGroup>
 				<Pos>1,0</Pos>
-				<Size>505,100</Size>
+				<Size>505,50</Size>
 				<Style>QGroupBox { 
 					border: 0px solid green;  
 					margin: 0px 0px 0px 0px;
@@ -23,7 +23,7 @@
 				<Children>
 					<WidgetGroup>
 						<Pos>9,5</Pos>
-						<Size>170,90</Size>
+						<Size>170,45</Size>
 						<Layout>vertical</Layout>
 						<Style>QGroupBox { 
 							background: url(); 
@@ -33,14 +33,11 @@
 							<Template src="skin:effect_selector.xml">
 								<SetVariable name="effectnum">1</SetVariable>
 							</Template>	
-							<Template src="skin:effect_selector.xml">
-								<SetVariable name="effectnum">2</SetVariable>
-							</Template>
 						</Children>
 					</WidgetGroup>		
 					<WidgetGroup>
 						<Pos>170,5</Pos>
-						<Size>300,90</Size>
+						<Size>300,45</Size>
 						<Layout>vertical</Layout>
 						<Style>QGroupBox { 
 							background: url();
@@ -50,9 +47,6 @@
 							<Template src="skin:effect_parameters.xml">
 								<SetVariable name="effectnum">1</SetVariable>
 							</Template>	
-							<Template src="skin:effect_parameters.xml">
-								<SetVariable name="effectnum">2</SetVariable>
-							</Template>
 						</Children>
 					</WidgetGroup>		
 				</Children>		
@@ -80,11 +74,11 @@
 						</Style>
 						<Children>
 							<Template src="skin:effect_selector.xml">
+								<SetVariable name="effectnum">2</SetVariable>
+							</Template>
+							<Template src="skin:effect_selector.xml">
 								<SetVariable name="effectnum">3</SetVariable>
 							</Template>	
-							<Template src="skin:effect_selector.xml">
-								<SetVariable name="effectnum">4</SetVariable>
-							</Template>
 						</Children>
 					</WidgetGroup>		
 					<WidgetGroup>
@@ -97,11 +91,11 @@
 						</Style>
 						<Children>
 							<Template src="skin:effect_parameters.xml">
+								<SetVariable name="effectnum">2</SetVariable>
+							</Template>
+							<Template src="skin:effect_parameters.xml">
 								<SetVariable name="effectnum">3</SetVariable>
 							</Template>	
-							<Template src="skin:effect_parameters.xml">
-								<SetVariable name="effectnum">4</SetVariable>
-							</Template>
 						</Children>
 					</WidgetGroup>		
 				</Children>		

@@ -71,7 +71,7 @@
 						-->
 						<!-- The Mac App Store Version of Mixxx does not support vinyl control.
 						Comment out this tabs that no broken widget are displayed to the user
-						-->
+						
 						<PushButton>
 							<TooltipId></TooltipId>
 							<Style></Style>
@@ -92,7 +92,7 @@
 							</Connection>
 						</PushButton>
 	
-						<!--
+						
 						**********************************************
 						Slider- Channel Volume
 						**********************************************

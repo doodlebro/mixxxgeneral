@@ -68,6 +68,7 @@
 			<attribute config_key="[EffectRack1],show">1</attribute>
 			<attribute config_key="[Microphone],show_microphone">1</attribute>
 			<attribute config_key="[PreviewDeck],show_previewdeck">0</attribute>
+			<attribute config_key="[EffectRack1],num_effectunits">3</attribute>			
 		</attributes>
 	</manifest>
 
@@ -177,13 +178,14 @@
 			<Children>
 				<!-- EffectRack1 & Mixer sub-widget -->
 				<WidgetGroup>
-					<Size>i,i</Size>
-					<SizePolicy>f,f</SizePolicy>
+					<Size>505,260</Size>
+					<SizePolicy>p,p</SizePolicy>
 					<Layout>horizontal</Layout>
 					<Style>QGroupBox { border: 0px solid yellow; margin: 0px 0px 6px 0px;} </Style>
 					<Children>
 						<WidgetGroup>
 						<Size>505,260</Size>
+						<Style>QGroupBox { border: 0px solid blue; margin: 0px 0px 6px 0px;} </Style>
 						<Layout>vertical</Layout>
 						<Children>
   							<Template src="skin:effectunit.xml">
@@ -254,8 +256,24 @@
 					</Children>
 				</WidgetGroup>
 
-				
-
+				<!-- Loop Sampler Bank  
+				<WidgetGroup>
+				<Layout>horizontal</Layout>
+				<Style>QGroupBox { border: 0px solid yellow; margin: 0px 0px 6px 0px;} </Style>
+				<Children>
+					<Template src="skin:sampler.xml">
+					<SetVariable name="samplernum">4</SetVariable>
+					</Template>	
+					<Template src="skin:sampler.xml">
+					<SetVariable name="samplernum">5</SetVariable>
+					</Template>
+				</Children>
+				<Connection>
+					<ConfigKey>[Samplers],show_samplers</ConfigKey>
+					<BindProperty>visible</BindProperty>
+				</Connection>
+				</WidgetGroup>
+				-->
 
 				<!--
 				**********************************************
